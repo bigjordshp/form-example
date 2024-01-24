@@ -14,7 +14,7 @@ body {
 /*Right Section*/
 
 .rightside {
-    background-color: rgb(230, 230, 230); /*For testing*/
+    background-color: rgb(230, 230, 230);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -24,7 +24,7 @@ body {
 /*Top Right Section*/
 
 .rightsidetop {
-    background-color: rgb(230, 230, 230); /*For testing*/
+    background-color: rgb(230, 230, 230);
     padding: 3rem 0;
     margin: 1rem;
     line-height: 1.5rem;
@@ -36,6 +36,8 @@ h2 {
     text-align: center;
     padding: 10px 0;
     border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
     background-color: rgb(81, 169, 241);
 }
 
@@ -51,7 +53,7 @@ input {
 }
 
 form {
-    background-color:rgb(61, 148, 219); /*For testing*/
+    background-color:rgb(61, 148, 219);
     width: 100%;
 }
 
@@ -71,7 +73,7 @@ form {
 input:invalid {
     color: rgb(0, 0, 0);
     border: rgb(0, 0, 0) solid 2px;
-    background-color: lightcoral;
+    background-color: rgb(247, 160, 160);
 }
 
 /*Right Section Bottom*/
@@ -96,10 +98,34 @@ button:hover {
 
 /*Left Section*/
 .imgdiv {
-    background-color: blueviolet; /*For testing*/
+    display: flex;
+    align-items: stretch;
     width: 25%;
 }
 
 .treepic {
-    width: 100%;/**/
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
+
+/*Responsiveness*/
+@media (max-width: 410px) {
+    .flexcontainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .rightside,
+    .imgdiv {
+      width: 100%;
+    }
+  
+    .treepic {
+      height: 50vh;
+      object-fit: cover;
+      object-position: center bottom;
+    }
+  }
+
+  
