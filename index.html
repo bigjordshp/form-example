@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Righteous&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="js.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body class="flexcontainer">
+    <div class="imgdiv">
+        <img class="treepic" src="tree.jpg" alt="picture of tree">
+        <!--Logo overtop, credit to artist at bottom-->
+    </div>
+
+    <div class="rightside">
+        
+        <h1 class="rightsidetop">This is not an actual form that can be used. However you will
+            find that this form has many validation features. Such as the use of regular expressions 
+            and CSS pseudo-classes.
+        </h1>
+
+        <form action="post">
+            <h2>Sign up now!</h2>
+
+            <div class="formgroup">
+                <div class="formitem">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="firstname" id="firstname" required pattern="[a-zA-Z]+">
+                </div>
+
+                <div class="formitem">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="lastname" id="lastname" required pattern="[a-zA-Z]+">
+                </div>
+            </div><!--End of form group 1-->
+
+            <div class="formgroup">
+                <div class="formitem">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" name="email" id="email" pattern="[a-zA-Z0-9]+@[a-zA-Z]{5,}\.(?:com|org|edu|net|gov|mil|co\.uk|com\.au)">
+                </div>
+
+                <div class="formitem">
+                    <label for="phonenumber">PHONE NUMBER</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" min="9" max="20" placeholder="xxx-xxx-xxxx" pattern="[0-9]{9,10}|\+?\d{1}?\s\(?\d{3}\)?-\d{3}-\d{4}">
+                </div>
+            </div><!--End of form group 2-->
+
+            <div class="formgroup">
+                <div class="formitem">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="firstname" id="password">
+                </div>
+
+                <div class="formitem">
+                    <label for="confirmation">CONFIRM PASSWORD</label>
+                    <input type="password" name="lastname" id="confirmation">
+                </div>
+            </div><!--End of form group 3-->
+        </form>
+
+        <div class="rightsidebottom">
+            <button id="submitbtn" type="submit">Create Account</button>
+
+            <p>Already have an account? <a href="">Log In</a></p>
+
+        </div>
+
+    </div><!--End rightside-->
+</body>
+</html>

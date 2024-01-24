@@ -1,0 +1,105 @@
+/*CSS Reset (Meyer's)*/
+/*Both Sections*/
+
+body {
+    background-color: black;
+    font-family: "Acme";
+}
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*Right Section*/
+
+.rightside {
+    background-color: rgb(230, 230, 230); /*For testing*/
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+}
+
+/*Top Right Section*/
+
+.rightsidetop {
+    background-color: rgb(230, 230, 230); /*For testing*/
+    padding: 3rem 0;
+    margin: 1rem;
+    line-height: 1.5rem;
+}
+
+/*Middle Right Section*/
+
+h2 {
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid black;
+    background-color: rgb(81, 169, 241);
+}
+
+label {
+    padding-bottom: 5px;
+    margin-left: 5px;
+    font-family: "Righteous";
+    color: rgb(0, 0, 0);
+}
+
+input {
+    margin-left: 5px;
+}
+
+form {
+    background-color:rgb(61, 148, 219); /*For testing*/
+    width: 100%;
+}
+
+.formgroup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0.5rem 0 1rem 0;
+}
+
+.formitem {
+    display: flex;
+    flex-direction: column;
+}
+
+input:invalid {
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0) solid 2px;
+    background-color: lightcoral;
+}
+
+/*Right Section Bottom*/
+.rightsidebottom > button {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 20%;
+    font-family: "Acme";
+    background-color: rgb(61, 148, 219);
+    border-style: hidden;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(22, 115, 192);
+}
+
+.rightsidebottom > p {
+    font-family: "Acme";
+    margin: 0 1rem 1rem 1rem;
+}
+
+/*Left Section*/
+.imgdiv {
+    background-color: blueviolet; /*For testing*/
+    width: 25%;
+}
+
+.treepic {
+    width: 100%;/**/
+}

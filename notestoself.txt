@@ -1,0 +1,11 @@
+Right side is 3 divs, flex-direction: column;
+
+The middle section will be the most difficult in a way. This div needs an absolute position, so I
+can position the header inside of it to the top left?
+Other than that, I just need to flex wrap everything. On the widest of screens I should only have
+2 inputs on a given row, going down to 1 based on screen size.
+
+Left side, have a div overtop of the image, set the opacity, credit the img artist at bottom.
+
+Do a media query for sizes 320px and lower
+Do one for tablet sizes
