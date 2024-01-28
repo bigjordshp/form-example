@@ -1,5 +1,15 @@
 /*CSS Reset (Meyer's)*/
 /*Both Sections*/
+:root {
+    --primaryclr: rgb(138,158,160);
+    --secondaryclr: rgb(204,218,219);
+}
+
+html {
+    overflow: visible;
+    min-height: 100vh;
+    width: 100%;
+}
 
 body {
     background-color: black;
@@ -10,7 +20,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
 }
 /*Right Section*/
 
@@ -19,7 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 50%;
+    flex: 0 1 auto;
 }
 
 /*Top Right Section*/
@@ -39,7 +49,7 @@ h2 {
     border: 1px solid black;
     border-left: 0;
     border-right: 0;
-    background-color: rgb(81, 169, 241);
+    background-color: var(--secondaryclr);
 }
 
 label {
@@ -54,7 +64,7 @@ input {
 }
 
 form {
-    background-color:rgb(61, 148, 219);
+    background-color:var(--primaryclr);
     width: 100%;
 }
 
@@ -81,7 +91,7 @@ input:invalid {
 .rightsidebottom {
     display: flex;
     flex-direction: column;
-    min-height: 100px;
+    min-height: 200px;
 }
 
 .rightsidebottom > button {
@@ -89,13 +99,14 @@ input:invalid {
     padding: 0.5rem;
     border-radius: 20%;
     font-family: "Acme";
-    background-color: rgb(61, 148, 219);
+    background-color: var(--primaryclr);
     border-style: hidden;
 }
 
 button:hover {
     cursor: pointer;
-    background-color: rgb(22, 115, 192);
+    background-color: var(--secondaryclr);
+    border: solid 1px black;
 }
 
 .rightsidebottom > p {
@@ -104,18 +115,14 @@ button:hover {
 }
 
 /*Left Section*/
-.imgdiv {
-    display: flex;
-    align-items: stretch;
-    width: 25%;
-    min-height: 200px;
+.vasepic {
+    max-width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+    flex: 0 0 auto;
 }
 
-.vasepic {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+
 
 /*Responsiveness*/
 @media (max-width: 410px) {
@@ -124,14 +131,13 @@ button:hover {
       align-items: center;
     }
   
-    .rightside,
-    .imgdiv {
+    .rightside,{
       width: 100%;
     }
   
     .vasepic {
       height: 50vh;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center bottom;
     }
   }
