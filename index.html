@@ -9,69 +9,73 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="css.css">
     <script src="js.js" defer></script>
-    <title>Document</title>
+    <title>Form Example</title>
 </head>
 
-<body class="flexcontainer">
-    <div class="imgdiv">
-        <img class="treepic" src="tree.jpg" alt="picture of tree">
-        <!--Logo overtop, credit to artist at bottom-->
-    </div>
-
-    <div class="rightside">
-        
-        <h1 class="rightsidetop">This is not an actual form that can be used. However you will
-            find that this form has many validation features. Such as the use of regular expressions 
-            and CSS pseudo-classes.
-        </h1>
-
-        <form id="myform" action="results.html" method="GET">
-            <h2>Sign up now!</h2>
-
-            <fieldset class="formgroup">
-                <div class="formitem">
-                    <label for="firstname">FIRST NAME</label>
-                    <input type="text" name="firstname" id="firstname" placeholder="name" pattern="[a-zA-Z]+">
-                </div>
-
-                <div class="formitem">
-                    <label for="lastname">LAST NAME</label>
-                    <input type="text" name="lastname" id="lastname" placeholder="surname" pattern="[a-zA-Z]+">
-                </div>
-            </fieldset><!--End of form group 1-->
-
-            <fieldset class="formgroup">
-                <div class="formitem">
-                    <label for="email">EMAIL ADDRESS</label>
-                    <input type="email" name="email" id="email" pattern="[a-zA-Z0-9]+@[a-zA-Z]{5,}\.(?:com|org|edu|net|gov|mil|co\.uk|com\.au)">
-                </div>
-
-                <div class="formitem">
-                    <label for="phonenumber">PHONE NUMBER</label>
-                    <input type="tel" name="phonenumber" id="phonenumber" min="9" max="20" placeholder="xxx-xxx-xxxx" pattern="[0-9]{9,10}|\+?\d{1}?\s\(?\d{3}\)?-\d{3}-\d{4}">
-                </div>
-            </fieldset><!--End of form group 2-->
-
-            <fieldset class="formgroup">
-                <div class="formitem">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                </div>
-
-                <div class="formitem">
-                    <label for="confirmation">CONFIRM PASSWORD</label>
-                    <input type="password" name="cofirmation" id="confirmation">
-                </div>
-            </fieldset><!--End of form group 3-->
-        </form>
-
-        <div class="rightsidebottom">
-            <button form="myform" id="submitbtn" type="submit">Create Account</button>
-
-            <p>Already have an account? <a href="">Log In</a></p>
-
+<body>
+    <div class="flexcontainer">
+        <div class="imgdiv">
+            <img class="vasepic" src="vase.jpg" alt="picture of vase">
         </div>
 
-    </div><!--End rightside-->
+        <div class="rightside">
+            
+            <h1 class="rightsidetop">This is not an actual form that can be used. However you will
+                find that this form has many validation features. Such as the use of regular expressions 
+                and CSS pseudo-classes.
+            </h1>
+
+            <form id="myform" action="results.html" method="GET">
+                <h2>Sign up now!</h2>
+
+                <fieldset class="formgroup">
+                    <div class="formitem">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="name" pattern="[a-zA-Z]+">
+                    </div>
+
+                    <div class="formitem">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="surname" pattern="[a-zA-Z]+">
+                    </div>
+                </fieldset><!--End of form group 1-->
+
+                <fieldset class="formgroup">
+                    <div class="formitem">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="email" name="email" id="email" pattern="[a-zA-Z0-9]+@[a-zA-Z]{5,}\.(?:com|org|edu|net|gov|mil|co\.uk|com\.au)">
+                    </div>
+
+                    <div class="formitem">
+                        <label for="phonenumber">PHONE NUMBER</label>
+                        <input type="tel" name="phonenumber" id="phonenumber" min="9" max="20" placeholder="xxx-xxx-xxxx" pattern="[0-9]{9,10}|\+?\d{1}?\s\(?\d{3}\)?-\d{3}-\d{4}">
+                    </div>
+                </fieldset><!--End of form group 2-->
+
+                <fieldset class="formgroup">
+                    <div class="formitem">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="formitem">
+                        <label for="confirmation">CONFIRM PASSWORD</label>
+                        <input type="password" name="cofirmation" id="confirmation">
+                    </div>
+                </fieldset><!--End of form group 3-->
+            </form>
+
+            <div class="rightsidebottom">
+                <button form="myform" id="submitbtn" type="submit">Create Account</button>
+
+                <p>Already have an account? <a href="">Log In</a></p>
+
+                <p>Photo by <a href="https://unsplash.com/@_imd?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Zoe</a> on <a href="https://unsplash.com/photos/a-vase-with-flowers-on-a-chair-qGZW9d1PvTA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+  
+
+            </div>
+
+        </div><!--End rightside-->
+    </div><!--End of flexcontainer-->
 </body>
 </html>

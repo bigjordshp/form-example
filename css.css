@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 100vh;
 }
 /*Right Section*/
 
@@ -77,6 +78,12 @@ input:invalid {
 }
 
 /*Right Section Bottom*/
+.rightsidebottom {
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+}
+
 .rightsidebottom > button {
     margin: 1rem;
     padding: 0.5rem;
@@ -101,9 +108,10 @@ button:hover {
     display: flex;
     align-items: stretch;
     width: 25%;
+    min-height: 200px;
 }
 
-.treepic {
+.vasepic {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -121,11 +129,22 @@ button:hover {
       width: 100%;
     }
   
-    .treepic {
+    .vasepic {
       height: 50vh;
       object-fit: cover;
       object-position: center bottom;
     }
   }
-
   
+
+@media (max-width: 727px) {  
+    .rightsidebottom > p {
+        font-family: "Acme";
+        margin: 0 0 0 1rem;
+    }
+
+    .rightsidebottom > button {
+        margin: 1rem 0 0 1rem;
+        padding: 0rem;
+    }
+}
